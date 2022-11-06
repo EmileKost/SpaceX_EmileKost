@@ -1,0 +1,142 @@
+
+header {
+    background-color: #000;
+}
+
+main {
+    margin-top: 110px;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+main a:nth-of-type(1) {
+    width: fit-content;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: brandon-grotesque, sans-serif;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition: .5s;
+}
+
+main a:nth-of-type(1) span:nth-of-type(1) svg {
+    height: 12px;
+    width: auto;
+}
+
+main a:nth-of-type(1):hover {
+    gap: 15px;
+}
+
+main iframe {
+    width: 100%;
+    margin-top: 20px;
+    height: 200px;
+}
+
+main h4:first-of-type {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 100;
+    color: #8b939b;
+}
+
+main h1:first-of-type {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+main section:first-of-type article {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main section:first-of-type article p {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 100;
+    max-width: 550px;
+}
+
+section:nth-of-type(2) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section:nth-of-type(2) figure {
+    width: fit-content;
+    transition: .7s;
+}
+
+section:nth-of-type(2) figure:hover {
+    transform: translateY(10px);
+}
+
+
+section:nth-of-type(2) figure img{
+    width: 95%;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media  (min-width: 1000px) {
+    section:nth-of-type(2) figure img{
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    figcaption {
+        max-width: fit-content;
+        text-align: center;
+    }
+}
+
+section:nth-of-type(2) figure figcaption {
+    text-align: center;
+    margin-top: 5px;
+}
+
+section:nth-of-type(3) img:first-of-type {
+    display: none;
+}
+
+@media  (min-width: 500px) {
+    section:nth-of-type(3) img:first-of-type {
+        display: block;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+}
+
+section:nth-of-type(3) img:nth-of-type(2) {
+    width: 100%;
+}
+
+section:nth-of-type(3) ul {
+    max-height: 250px;
+    font-size: 14px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 500px) {
+    section:nth-of-type(3) img:nth-of-type(2) {
+        display: none;
+    }
+    section:nth-of-type(3) ul {
+        display: none;
+    }
+}
