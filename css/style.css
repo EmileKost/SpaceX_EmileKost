@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --black-bg-color: #000;
+    --white-text-color: #fff;
+}
 
 h1, h2, h3, h4, a, p {
     font-family: brandon-grotesque, sans-serif;
@@ -26,8 +30,8 @@ h2 {
 
 
 body {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--black-bg-color);
+    color: var(--white-text-color);
     scroll-behavior: smooth;
     font-family: brandon-grotesque, sans-serif;
 }
@@ -54,7 +58,7 @@ header {
 }
 
 header svg {
-    fill: #fff;
+    fill: var(--white-text-color);
     width: 150px;
     height: auto;
 }
@@ -86,14 +90,14 @@ header section:nth-of-type(2) {
     position: absolute;
     right: -400px;
     top: 0;
-    background-color: #000;
+    background-color: var(--black-bg-color);
     width: 400px;
     height: 100vh;
     transition: 1s;
 }
 
 header section:nth-of-type(2) ul {
-    color: #fff;
+    color: var(--white-text-color);
     list-style: none;
     margin-top: 100px;
     width: 100%;
@@ -136,7 +140,7 @@ header section:nth-of-type(2) ul li a:hover {
 .menu-element  {
     width: 16px;
     height: 2px;
-    background-color: #fff;
+    background-color: var(--white-text-color);
     transition: .5s;
 }
 
