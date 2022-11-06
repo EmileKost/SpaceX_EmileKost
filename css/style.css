@@ -46,6 +46,7 @@ header {
     display: flex;
     align-items: baseline;
     gap: 50px;
+    z-index: 20;
 }
 
 .visibility {
@@ -88,7 +89,7 @@ header section:nth-of-type(2) {
     background-color: #000;
     width: 400px;
     height: 100vh;
-    transition: 1.5s;
+    transition: 1s;
 }
 
 header section:nth-of-type(2) ul {
